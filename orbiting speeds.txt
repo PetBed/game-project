@@ -1,0 +1,19 @@
+Mercury	88 days
+Venus	224.7 days
+Earth	365 days
+Mars	687 days
+Jupiter	4343.5 days
+Saturn	10767.5 days
+Uranus	30660 days
+Neptune	60152 days
+Pluto	90410.5 days
+
+22
+56.175
+91.25
+171.75
+1085.875
+2691.875
+7665
+15038
+22602.625
