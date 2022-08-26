@@ -84,8 +84,9 @@ function checkForHover() {
 document.addEventListener("click", () => {
     if (!selected == "") {
         //location.replace(`./sub-des/${selected}/main.html`)
-        window.open(`./sub-des/${selected}/main.html`, "_blank")
+        window.open(`./sub-des/${selected}/main.html`, "_self")
     }
 })
+
 checkForHover();
 positionPlanets();

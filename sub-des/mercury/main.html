@@ -5,19 +5,50 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
+        <div id="nav-bar">
+            <a href="../../main.html" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#description">Description</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+        </div>
 
-        <div id="gravity">
-            <h3>Gravity Simulation</h2>
-            <p>The gravity on mercury is 3.7m/s, click the Run Simulation button to see a 
-                simulation of an object falling on mars!</p>
-            <div id="gravity-sim">
-                <canvas id="canvas-gravity"></canvas>
-                <br>
-                <div id="gravity-button">
-                    <a onclick=gravitySimulation()>Run Simulation!</a>
+        <div id="main-div">
+            <h1>Mercury: The swift planet</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Mercury</strong> is the smallest planet in our solar system - with a diameter of only 2,439.7 km. 
+                    It is also the closest planet to the sun. 
+                    Mercury is also known as the "Swift Planet" because of its short orbit time around the sun.<br>
+
+                </p>
+            </div>
+            <div id="discription">
+                <h3>Description</h3>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Gravity Simulation</h2>
+
+                    <p>The gravity on mercury is 3.7m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on mars!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(3.7)>Run Simulation!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
         <script src="code.js"></script>
     </body>
 </html>
