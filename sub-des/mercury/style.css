@@ -1,0 +1,25 @@
+#canvas-gravity{
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+}
+#gravity-button{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+#gravity-button a{
+    border-radius: 4px;
+    background-color: limegreen;
+    padding: 5px 5px;
+    transition: 0.5s;
+}
+#gravity-button a:hover{
+    cursor: pointer;
+    background-color: green;
+    transition: 0.5s;
+}
+#gravity-sim{
+    display: inline-block;
+}

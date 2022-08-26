@@ -17,6 +17,8 @@ var uranusDes = document.getElementById("uranus-des");
 var neptuneDes = document.getElementById("neptune-des");
 var plutoDes = document.getElementById("pluto-des");
 
+var selected = "";
+
 
 
 const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto]
@@ -27,8 +29,8 @@ function positionPlanets() {
     for (i = 0; i < 9; i++) {
         var planet = planets[i]
         planet.style.left = planetLeft + "px";
-        planet.style.transformOrigin = Math.abs(planetLeft)+100+"px";
-        console.log(Math.abs(planetLeft)+100 + planetLeft)
+        planet.style.transformOrigin = `${(Math.abs(planetLeft)+100+'px')} 0px`;
+        // console.log(`"${(Math.abs(planetLeft)+100+'px')} 0px"`)
         planetLeft += -50;
     }
 }
@@ -37,9 +39,6 @@ function checkForHover() {
     function stopAnimation(pl, plDes){
         pl.style.animationPlayState = "paused";
         var position = pl.getBoundingClientRect();
-        // var translate3dValue = "translate3d(" + position.left + "px," + position.top + "px, 0)" 
-        // plDes.style.transform = translate3dValue;
-        // console.log(translate3dValue)
         plDes.style.display = "block";
         var fragment = document.createDocumentFragment();
         fragment.appendChild(plDes);
@@ -51,10 +50,15 @@ function checkForHover() {
         var pt = plDes.style.paddingTop;
         plDes.style.left = (position.left+hl)+"px";
         plDes.style.top = (position.top-hd)+"px";
+
+        selected = pl.id;
+        console.log(selected.id)
     }
     function startAnimation(pl, plDes){
         plDes.style.display = "none";
         pl.style.animationPlayState = "running";
+
+        selected = "";
     }
     mercury.onmouseover = () => {stopAnimation(mercury, mercuryDes)}
     venus.onmouseover = () => {stopAnimation(venus, venusDes)}
@@ -76,5 +80,12 @@ function checkForHover() {
     neptune.onmouseout = () => {startAnimation(neptune, neptuneDes)}
     pluto.onmouseout = () => {startAnimation(pluto, plutoDes)}
 }
+
+document.addEventListener("click", () => {
+    if (!selected == "") {
+        //location.replace(`./sub-des/${selected}/main.html`)
+        window.open(`./sub-des/${selected}/main.html`, "_blank")
+    }
+})
 checkForHover();
 positionPlanets();

@@ -1,5 +1,5 @@
 :root{
-
+    
 }
 body{
     background-color: black;
@@ -30,33 +30,37 @@ body{
     border-radius: 50%;
 }
 #mercury{
+    /* width: 100px;
+    height: 100px; */
+    background-position: 50%;
+    background-image: url("images/mecury.jpg");
     background-color: gray;
-    animation: orbit 22s linear infinite;
+    animation: orbit 1.6s linear infinite;
 }
 #venus{
     background-color: orangered;
-    animation: orbit 56.175s linear infinite;
+    animation: orbit 2.247s linear infinite;
 }
 #earth{
-    animation: orbit 91.25s linear infinite;
+    animation: orbit 3.65s linear infinite;
 }
 #mars{
-    animation: orbit 171.75s linear infinite;
+    animation: orbit 6.87s linear infinite;
 }
 #jupiter{
-    animation: orbit 1085.875s linear infinite;
+    animation: orbit 43.435s linear infinite;
 }
 #saturn{
-    animation: orbit 2691.875s linear infinite;
+    animation: orbit 107.675s linear infinite;
 }
 #uranus{
-    animation: orbit 7665s linear infinite;
+    animation: orbit 306.6s linear infinite;
 }
 #neptune{
-    animation: orbit 15038s linear infinite;
+    animation: orbit 601.52s linear infinite;
 }
 #pluto{
-    animation: orbit 22602.625s linear infinite;
+    animation: orbit 904.105s linear infinite;
 }
 .des{
     background-color: white;
