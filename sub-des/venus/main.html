@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mecury</title>
-        <link src="style.css" rel="stylesheet">
+        <title>Venus</title>
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="gravity">
-            <h3>Gravity Simulation</h2>
-            <p>The gravity on mercury is 3.7m/s, click the Run Simulation button to see a 
-                simulation of an object falling on mars!</p>
-            <div id="gravity-sim">
-                <canvas id="canvas-gravity"></canvas>
-                <br>
-                <div id="gravity-button">
-                    <a onclick=gravitySimulation(3.7)>Run Simulation!</a>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#discription">Discription</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Venus: The Morning and Evening Star</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Venus</strong> is the second planet from the Sun and is Earth' closest planetary neighbour.
+                    It is also often called Earth's twin because it's similar in size and density.
+                    Venus is known as the "Morning and Evening Star" because it is one of the brightest objects in the sky
+                    when viewed from earth. It is always found near the sun and it rises and sets each day.<br>
+                    Venus's surface is often described as a "hellscape" due to thousands of volcanos and crushing air pressure 
+                    on its surface.
+                </p>
+            </div>
+            <div id="discription">
+                <h3>Description</h3>
+                <p>Venus is formed around 4.6 billion years ago. With a radius of 3760 miles (6052 kilometers), 
+                    and it is almost as big as Earth.
+                    From Earth, Venus is the brightest object in the night sky after our own Moon. Venus also has phases, just like our Moon 
+                    - only that it takes 584 days to complete a cycle.
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2343' width='60%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of Venus <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Orbit and Rotation:</strong> Mercury completes an orbit around the Sun every 88 days, travelling through space at nearly 29 miles 
+                    (47 kilometers) per second. Mercury spins slowly on its axis and completes one rotation every 59 Earth days. Mercury's axis 
+                    of rotation is tilted just about 2 degrees. And so it doesn't experience seasons as many other planets do. <br>
+                    <strong>Structure:</strong> Mercury is the second densest planet with a large metallic code with a radius of about 1,289 miles (2,074 kilometers)
+                    Mercury's outer shell<a href="#footnotes">**</a> is only about 250 miles (400 kilometers) thick.<br>
+                    <strong>Surface:</strong> Mercury's surface resembles that of Earth's moon - scarred by many impact craters from collisions with meteoroids
+                    and comets. To the human eye, Mercury's surface would appear greyish-brown. <br>
+                    <strong>Temperatures:</strong> During the day, temperatures on the surface can reach 430 degrees Celsius (800 degrees Fahrenheit) and since there
+                    isn't any atmosphere to retain the heat, the temperature can drop to -180 degrees Celsius (-290 degrees Fahrenheit). <br>
+                    <strong>Atmosphere:</strong> Mercury doesn't have an atmosphere, but possesses a thin exophere that is composed mostly of oxygen, sodium, hydrogen,
+                    helium and potassium.
+                    <strong>Magetosphere:</strong> Mercury's magnetic field is offset relative to the planet's equator and the strength of the magnetic field is only
+                    1% that of Earth's. 
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>Mercury's size is the same as 0.38 Earths</li>
+                    <li>Mercury's mass is 3,377 kilograms or the same as 0.055 Earths</li>
+                    <li>Not only is Mercury the smallest planet, it is also shrinking</li>
+                    <li>Mercury orbits the Sun faster than any other planets</li>
+                    <li>Mercury doesn't have any moons</li>
+                    <li>Mercury was named after the Roman god of commerce, <i>Mercurius</i> (Mercury)</li>
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Venus is 8.87m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Venus!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(8.87)>Run Simulation!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#discription">*</a>One astronomical unit (abbreviated as AU) is the distance from the Sun to Earth.
+                    </p>
+                    <p><a href="#discription">**</a>The outer shell is called the mantle and crust</p>
+            </div>
         </div>
+
+
+        <script src="code.js"></script>
     </body>
 </html>
