@@ -28,16 +28,17 @@ body{
     top: 50%;
     background-color: white;
     border-radius: 50%;
+    background-size: 100% 100%;
 }
 #mercury{
     /* width: 100px;
     height: 100px; */
-    background-position: 50%;
-    background-image: url("images/mecury.jpg");
+    background-image: url("images/mercury.png");
     background-color: gray;
     animation: orbit 1.6s linear infinite;
 }
 #venus{
+    background-image: url("images/venus.png");
     background-color: orangered;
     animation: orbit 2.247s linear infinite;
 }

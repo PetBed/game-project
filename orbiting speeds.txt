@@ -8,6 +8,15 @@ Uranus	30660 days
 Neptune	60152 days
 Pluto	90410.5 days
 
+Mercury	4879.4	 38% the size of Earth 
+Venus	12104	 95% the size of Earth
+Earth	12756	 100% the size of Earth
+Mars	6779	 53% the size of Earth
+Jupiter	142800	 1120% the size of Earth
+Saturn	120660	 945% the size of Earth
+Uranus	51118	 400% the size of Earth
+Neptune	49528	 388% the size of Earth
+
 22
 56.175
 91.25           
