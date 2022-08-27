@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mecury</title>
-        <link src="style.css" rel="stylesheet">
+        <title>Earth</title>
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="gravity">
-            <h3>Gravity Simulation</h2>
-            <p>The gravity on mercury is 3.7m/s, click the Run Simulation button to see a 
-                simulation of an object falling on mars!</p>
-            <div id="gravity-sim">
-                <canvas id="canvas-gravity"></canvas>
-                <br>
-                <div id="gravity-button">
-                    <a onclick=gravitySimulation(3.7)>Run Simulation!</a>
+        <div id="nav-bar">
+            <a href="../../" id="back-button">&laquo; Back</a>
+            <a href="#intro">Overview</a>
+            <a href="#discription">Discription</a>
+            <a href="#fun-facts">Fun Facts</a>
+            <a href="#simulation">Simulation(s)</a>
+            <a href="#footnotes">Footnotes</a>
+        </div>
+
+        <div id="main-div">
+            <h1>Earth: The Blue Planet</h1>
+
+            <div id="intro">
+                <h3>Overview</h3>
+                <p><strong>Earth</strong> is the third planet from the Sun and is our home planet.
+                    It's also the only planet that we know of so far that's inhabited by living beings. While Earth is the 
+                    5th largest planet, it is the only planet in the solar system with liquid water on its surface, 
+                    thus earning the nickname, The Blue Planet. It's slightly larger than Venus and is 
+                    the biggest among the four terrestrial<a href="#footnotes">*</a> planets.
+                </p>
+            </div>
+            <div id="discription">
+                <h3>Description</h3>
+                <p>Earth is formed around 4.5 billion years ago, with a radius of 3,959 miles (6,371 kilometers).
+                    From an average distance of 93 million miles (150 million kilometers), Earth is exactly
+                    one astronomical unit away from the Sun.<a href="#footnotes">**</a> 
+                    It takes about 8 minutes for light from the Sun to reach Earth.
+                </p>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2392' width='100%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of Earth, our home planet. <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                    </p>
+                </div>
+                <p>
+                    <strong>Potential for Life:</strong> Earth has a very hospitable temperature and mix of chemicals that have made life 
+                    abundant here. The temperature here allows liquid water to exist for extended peroid of time and its vast oceans provided 
+                    a convenient place for life to begin about 3.8 billion years ago. <br>
+                    <strong>Orbit and Rotation:</strong> Earth completes one rotation every 23.9 hours, and one lap around the sun 365.25 days
+                    that extra quater of a day will be added every four years as a leap day. The Earth's axis of rotation is tilted 23.4 degrees.
+                    This tilt causes our yearly cycle of seasons.<br>
+                    <strong>Structure:</strong> The structure of Venus is quite similar to that of Earth's. It has an iron core enveloped by a
+                    hot-rock mantle with a thin, rocky crust. The crust changes form and sometimes erupts into volcanoes in response to the ebb and 
+                    flow of heat and pressure deep beneath the surface.<br>
+                    <strong>Surface:</strong> Venus appears to have erased most traces of its early surface due to volcanic and tectonic forces,
+                    with the average age of surface dating back to 150 million years ago mixed with some older surfaces.
+                    Venus is a landscape of valleys and high mountains dotted with thousands of volcanoes. <br>
+                    <strong>Temperatures:</strong> Venus is the hottest planet in the solar system - even though Mercury is closer to the sun.
+                    Surface temperatures on Venus is about 475 degrees Celsius (900 degrees Fahrenheit) - hot enough to melt lead.<br>
+                    <strong>Atmosphere:</strong>  Venus' atmosphere is one of the extremes. The atmospheric pressure on Venus' surface is about
+                    95 times that of Earth's. This is the same pressure found at a depth of 0.6 miles (1 kilometer) below Earth's oceans.
+                    The atmosphere is mostly carbon dioxide - the same gas creating the greenhouse effect<a href="#footnotes">**</a> on Venus and Earth, 
+                    with clouds composed of sulfuric acid.<br>
+                    <strong>Magetosphere:</strong> Venus does not have its own internally generated magnetic field. Instead, Venus has
+                    what is known as an induced magnetic field. This magnetic field is created by the interaction of the Sun's 
+                    magnetic field and the planet's outer atmosphere.
+                </p>
+            </div>
+            <div id="fun-facts">
+                <h3>Fun Facts!</h3>
+                <ul>
+                    <li>Unlike other planets in our solar system, Venus spins clockwise on its axis.</li>
+                    <li>Venus's mass is 4.8673e+24 tonnes or the same as 0.815 Earths.</li>
+                    <li>Venus is sometimes called Earth's twin because it's similar in size and structure.</li>
+                    <li>Venus is named after the Roman godess of love.</li>  
+                </ul>
+            </div>
+
+            <div id="simulation">
+                <div id="gravity">
+                    <h3>Simulations</h2>
+
+                    <p>The gravity on Venus is 8.87m/s, click the Run Simulation button to see a 
+                        simulation of an object falling on Venus!</p>
+                    <div id="gravity-sim">
+                        <canvas id="canvas-gravity"></canvas>
+                        <br>
+                        <div id="gravity-button">
+                            <a onclick=gravitySimulation(9.8)>Run Simulation!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="footnotes">
+                <h3>Footnotes:</h3>
+                    <p><a href="#intro">*</a>The 4 terrestrial planets are the four innermost planets, 
+                        (Mercury, Venus, Earth and Mars).
+                    </p>
+                    <p><a href="#discription">**</a>One astronomical unit (abbreviated as AU), is the distance
+                        from the Sun to Earth. This unit provides an easy way to quickly compare planets' 
+                        distances from the Sun.
+                    </p>
+            </div>
         </div>
+
+
+        <script src="code.js"></script>
     </body>
 </html>
