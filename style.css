@@ -43,24 +43,34 @@ body{
     animation: orbit 2.247s linear infinite;
 }
 #earth{
+    background-image: url("images/earth.png");
     animation: orbit 3.65s linear infinite;
 }
 #mars{
+    background-image: url("images/mars.png");
     animation: orbit 6.87s linear infinite;
 }
 #jupiter{
+    background-image: url("images/jupiter.png");
     animation: orbit 43.435s linear infinite;
 }
 #saturn{
+    width: 40px;
+    height: 40px;
     animation: orbit 107.675s linear infinite;
+    background-image: url("images/saturn.jpg");
+    background-position: 50% 50%;
 }
 #uranus{
     animation: orbit 306.6s linear infinite;
+    background-image: url("images/uranus.png");
 }
 #neptune{
+    background-image: url("images/neptune.png");
     animation: orbit 601.52s linear infinite;
 }
 #pluto{
+    background-image: url("images/pluto.png");
     animation: orbit 904.105s linear infinite;
 }
 .des{
