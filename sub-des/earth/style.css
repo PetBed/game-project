@@ -98,3 +98,6 @@ li{
     margin-top: 15px;
     border-top: 2px solid #bdbdbd;
 }
+#discription p {
+    margin: 5px 0px;
+}
