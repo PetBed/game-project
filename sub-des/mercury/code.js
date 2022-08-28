@@ -7,7 +7,7 @@ function gravitySimulation(grav) {
         simGoing = 1
         var x = g.width/2-  15;
         var y = 10;
-        var gravity = grav/50;
+        var gravity = grav/5;
         var vol = 0;
         const update = setInterval(updateGravity, 30);
         
