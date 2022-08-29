@@ -6,7 +6,6 @@ var jupiter = document.getElementById("jupiter")
 var saturn = document.getElementById("saturn")
 var uranus = document.getElementById("uranus")
 var neptune = document.getElementById("neptune")
-var pluto = document.getElementById("pluto")
 var mercuryDes = document.getElementById("mercury-des");
 var venusDes = document.getElementById("venus-des");
 var earthDes = document.getElementById("earth-des");
@@ -15,18 +14,18 @@ var jupiterDes = document.getElementById("jupiter-des");
 var saturnDes = document.getElementById("saturn-des");
 var uranusDes = document.getElementById("uranus-des");
 var neptuneDes = document.getElementById("neptune-des");
-var plutoDes = document.getElementById("pluto-des");
 
 var selected = "";
+var link = "";
+var keys = [];
 
 
-
-const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto]
+const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
 console.log(planets)
 
 function positionPlanets() {
     var planetLeft = -50;
-    for (i = 0; i < 9; i++) {
+    for (i = 0; i < 8; i++) {
         var planet = planets[i]
         planet.style.left = planetLeft + "px";
         planet.style.transformOrigin = `${(Math.abs(planetLeft)+100+'px')} 0px`;
@@ -68,7 +67,6 @@ function checkForHover() {
     saturn.onmouseover = () => {stopAnimation(saturn, saturnDes)}
     uranus.onmouseover = () => {stopAnimation(uranus, uranusDes)}
     neptune.onmouseover = () => {stopAnimation(neptune, neptuneDes)}
-    pluto.onmouseover = () => {stopAnimation(pluto, plutoDes)}
 
     mercury.onmouseout = () => {startAnimation(mercury, mercuryDes)}
     venus.onmouseout = () => {startAnimation(venus, venusDes)}
@@ -78,7 +76,6 @@ function checkForHover() {
     saturn.onmouseout = () => {startAnimation(saturn, saturnDes)}
     uranus.onmouseout = () => {startAnimation(uranus, uranusDes)}
     neptune.onmouseout = () => {startAnimation(neptune, neptuneDes)}
-    pluto.onmouseout = () => {startAnimation(pluto, plutoDes)}
 }
 
 document.addEventListener("click", () => {
@@ -87,6 +84,17 @@ document.addEventListener("click", () => {
         window.open(`./sub-des/${selected}/main.html`, "_self")
     }
 })
+
+// document.addEventListener("keydown", (e) => {
+//     if (e.keyCode != 13 || e.keyCode != 32) {
+//         link += String.fromCharCode(e.keyCode);
+//         console.log(link);
+//     } else if (e.keyCode == 32) {
+//         link += "+";
+//     } else {
+//         window.open(link);
+//     }
+// })
 
 checkForHover();
 positionPlanets();
