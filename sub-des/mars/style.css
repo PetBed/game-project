@@ -63,18 +63,18 @@ li{
     text-decoration: none;
     color: #0000EE;
 }
-#discription p a {
+#description p a {
     text-decoration: none;
     color: #0000EE;
 }
-#discription div {
+#description div {
     color: #5a6470;
     position: relative;
     display: block;
     text-align: center;
     font-size: 14px;
 }
-#discription iframe {
+#description iframe {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -98,6 +98,6 @@ li{
     margin-top: 15px;
     border-top: 2px solid #bdbdbd;
 }
-#discription p strong {
+#description p strong {
     margin: 10px 0px;
 }

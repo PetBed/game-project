@@ -59,18 +59,18 @@ p{
 li{
     font-size: 20px;
 }
-#discription p a {
+#description p a {
     text-decoration: none;
     color: #0000EE;
 }
-#discription div {
+#description div {
     color: #5a6470;
     position: relative;
     display: block;
     text-align: center;
     font-size: 14px;
 }
-#discription iframe {
+#description iframe {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
