@@ -25,7 +25,7 @@ body{
     border-radius: 50%;
 }
 #sun-container{
-    overflow: hidden;
+        overflow: hidden;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -104,34 +104,35 @@ body{
 
 #nav {
     height: 100%;
-    width: 200px;
+    width: 13%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #dd8615;
     padding-top: 0px;
   }
   
 #nav a {
-    padding: 8px 0px;
+    padding: 1.386% 0px;
     width: 100%;
     text-decoration: none;
     font-size: 30px;
-    color: #818181;
+    /* color: #818181; */
+    color: #000000;
     display: inline-block;
     transition: 0.3s;
 }
 #nav h1 {
-    margin: 10px 0px;
+    margin: 1.385vh 0px;
     text-align: center;
-    padding: 8px 40px 4px 32px;
+    padding: 1.11vh 2.6vw 0.55vh 2.08vw;
     text-decoration: none;
-    font-size: 30px;
-    color: #818181;
+    font-size: 175%;
+    color: #000000;
     display: block;
     transition: 0.3s;
-    border-bottom: 1px solid #818181;
+    border-bottom: 1px solid #000000;
 }
   
 #nav a:hover {
@@ -160,29 +161,27 @@ body{
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    color: #f1f1f1;
+    color: #f1f1f160;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #70f5ff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-left: 200px;
+    top: 90px;
 }
 
 .normal {
-    margin-top: -40px;
 }
 
 .sticked-uranus {
-    top: 290px;
 }
 
 .sticked-neptune {
-    top: 240px;
 }
 
 .dropdown-content a {
