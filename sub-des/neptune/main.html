@@ -5,37 +5,59 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="nav-bar">
-            <a href="../../" id="back-button">&laquo; Back</a>
-            <a href="#intro">Overview</a>
-            <a href="#description">Description</a>
-            <a href="#fun-facts">Fun Facts</a>
-            <a href="#simulation">Simulation(s)</a>
-            <a href="#footnotes">Footnotes</a>
-        </div>
+        <video autoplay muted loop id="background-video">
+            <source src="../../images/neptune.mp4" type="video/mp4">
+        </video>
 
-        <div id="main-div">
-            <h1>Neptune: The Big Blue Planet</h1>
-
-            <div id="intro">
-                <h3>Overview</h3>
-                <p><strong>Neptune</strong> is the eighth planet from the Sun and is the most distant planet in our solar system.
-                    More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye.
-                </p>
+        <div id="main-container">
+            <div id="nav-bar">
+                <a href="../../" id="back-button">&laquo; Back</a>
+                <a href="#intro">Overview</a>
+                <a href="#description">Description</a>
+                <a href="#fun-facts">Fun Facts</a>
+                <a href="#simulation">Simulation(s)</a>
+                <a href="#footnotes">Footnotes</a>
             </div>
-            <div id="description">
-                <h3>Description</h3>
-                <p>Neptune is formed around 4.5 billion years ago. With a radius of 15,299.4 miles (24,622 kilometers), Neptune is about four times wider than Earth.
-                    From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun.<a href="#footnotes">*</a>. 
-                    It takes about 4 hours for light from the Sun to reach Neptune. <br>
-                </p>
-                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2364' width='60%' height='450px' frameborder='0'></iframe>
-                <div>
-                    <p>
-                        A 3D model of Neptune, an ice giant planet.
-                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+            
+            <div id="side-bar">
+                <iframe src="https://www.youtube.com/embed/NStn7zZKXfE" 
+                title="Neptune 101 | National Geographic" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <br>
+                <iframe src="https://www.youtube.com/embed/faKnto4Pb6c" 
+                title="Our Solar System's Planets: Neptune" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/neptune" target="_blank">Wiki</a> Page About Neptune</li>
+                    <li><a href="https://nineplanets.org/neptune" target="_blank">More Facts About Neptune</a></li>
+                    <li><a href="https://www.nasa.gov/subject/3157/neptune/" target="_blank">News About Neptune from NASA</a></li>
+                </ul>
+            </div>
+
+            <div id="main-div">
+                <h1>Neptune: The Big Blue Planet</h1>
+                
+                <div id="intro">
+                    <h3>Overview</h3>
+                    <p><strong>Neptune</strong> is the eighth planet from the Sun and is the most distant planet in our solar system.
+                        More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye.
                     </p>
                 </div>
+                <div id="description">
+                    <h3>Description</h3>
+                    <p>Neptune is formed around 4.5 billion years ago. With a radius of 15,299.4 miles (24,622 kilometers), Neptune is about four times wider than Earth.
+                        From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun.<a href="#footnotes">*</a>. 
+                        It takes about 4 hours for light from the Sun to reach Neptune. <br>
+                    </p>
+                    <iframe src='https://solarsystem.nasa.gov/gltf_embed/2364' width='60%' height='450px' frameborder='0'></iframe>
+                    <div>
+                        <p>
+                            A 3D model of Neptune, an ice giant planet.
+                            <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                        </p>
+                    </div>
                 <p>
                     <strong>Potential for Life:</strong> <br>
                     Neptune's environment is not too conducive to life as we know it. The temperatures, pressures and materials are most likey too 
@@ -81,28 +103,29 @@
             <div id="simulation">
                 <div id="gravity">
                     <h3>Simulations</h2>
-
-                    <p>The gravity on Saturn is 11.15m/s, click the Run Simulation button to see a 
-                        simulation of an object falling on Saturn!</p>
-                    <div id="gravity-sim">
-                        <canvas id="canvas-gravity"></canvas>
-                        <br>
-                        <div id="gravity-button">
-                            <a onclick=gravitySimulation(11.15)>Run Simulation!</a>
+                        
+                        <p>The gravity on Saturn is 11.15m/s, click the Run Simulation button to see a 
+                            simulation of an object falling on Saturn!</p>
+                            <div id="gravity-sim">
+                                <canvas id="canvas-gravity"></canvas>
+                                <br>
+                                <div id="gravity-button">
+                                    <a onclick=gravitySimulation(11.15)>Run Simulation!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footnotes">
+                        <h3>Footnotes:</h3>
+                        <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                        </p>
+                        <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
+                            Rings D, E, F, and G are fainter and more recently discovered.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="footnotes">
-                <h3>Footnotes:</h3>
-                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
-                    </p>
-                    <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
-                        Rings D, E, F, and G are fainter and more recently discovered.</p>
-            </div>
-        </div>
-
-
-        <script src="code.js"></script>
-    </body>
-</html>
+                    
+                    
+                    <script src="code.js"></script>
+                </body>
+                </html>

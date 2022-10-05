@@ -5,38 +5,61 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="nav-bar">
-            <a href="../../" id="back-button">&laquo; Back</a>
-            <a href="#intro">Overview</a>
-            <a href="#description">Description</a>
-            <a href="#fun-facts">Fun Facts</a>
-            <a href="#simulation">Simulation(s)</a>
-            <a href="#footnotes">Footnotes</a>
-        </div>
+        <video autoplay muted loop id="background-video">
+            <source src="../../images/jupiter.mp4" type="video/mp4">
+        </video>
 
-        <div id="main-div">
-            <h1>Jupiter: The Gas Giant</h1>
-
-            <div id="intro">
-                <h3>Overview</h3>
-                <p><strong>Jupiter</strong> is the fifth planet from the Sun and is the largest planet our solar system.
-                    Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.
-                </p>
+        <div id="main-container">
+            <div id="nav-bar">
+                <a href="../../" id="back-button">&laquo; Back</a>
+                <a href="#intro">Overview</a>
+                <a href="#description">Description</a>
+                <a href="#fun-facts">Fun Facts</a>
+                <a href="#simulation">Simulation(s)</a>
+                <a href="#footnotes">Footnotes</a>
             </div>
-            <div id="description">
-                <h3>Description</h3>
-                <p>Jupiter is formed around 4.5 billion years ago with a radius of 43,440.7 miles (69,911 kilometers).
-                    From an average distance of 484 million miles (778 million kilometers), Jupiter is 5.2 astronomical 
-                    units away from the Sun<a href="#footnotes">*</a>. 
-                    It takes about 43 minutes for light from the Sun to reach Jupiter. <br>
-                </p>
-                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2375' width='60%' height='450px' frameborder='0'></iframe>
-                <div>
-                    <p>
-                        A 3D model of Jupiter, a gas giant planet. 
-                        <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+            
+            <div id="side-bar">
+                <iframe src="https://www.youtube.com/embed/PtkqwslbLY8" 
+                title="Jupiter 101 | National Geographic" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <br>
+                <iframe src="https://www.youtube.com/embed/txNjILemtsw" 
+                title="NASA ScienceCasts: New Science from Jupiter" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Wiki</a> Page About Jupiter</li>
+                    <li><a href="https://nineplanets.org/jupiter" target="_blank">More Facts About Jupiter</a></li>
+                    <li><a href="https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-jupiter-58.html" target="_blank">NASA Page About Jupiter</a></li>
+                    <li><a href="https://www.nasa.gov/jupiter" target="_blank">News About Jupiter from NASA</a></li>
+                </ul>
+            </div>
+
+            <div id="main-div">
+                <h1>Jupiter: The Gas Giant</h1>
+                
+                <div id="intro">
+                    <h3>Overview</h3>
+                    <p><strong>Jupiter</strong> is the fifth planet from the Sun and is the largest planet our solar system.
+                        Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.
                     </p>
                 </div>
+                <div id="description">
+                    <h3>Description</h3>
+                    <p>Jupiter is formed around 4.5 billion years ago with a radius of 43,440.7 miles (69,911 kilometers).
+                        From an average distance of 484 million miles (778 million kilometers), Jupiter is 5.2 astronomical 
+                        units away from the Sun<a href="#footnotes">*</a>. 
+                        It takes about 43 minutes for light from the Sun to reach Jupiter. <br>
+                    </p>
+                    <iframe src='https://solarsystem.nasa.gov/gltf_embed/2375' width='60%' height='450px' frameborder='0'></iframe>
+                    <div>
+                        <p>
+                            A 3D model of Jupiter, a gas giant planet. 
+                            <br>Credit: NASA Visualization Technology Applications and Development (VTAD)<br>
+                        </p>
+                    </div>
                 <p>
                     <strong>Potential for Life:</strong> <br>
                     Jupiter's environment is probably too extreme and volatile for living orgaisms to adapt to. 
@@ -78,28 +101,29 @@
                     <li>Jupiter is named after the Roman king of gods, Jupiter.</li>
                 </ul>
             </div>
-
+            
             <div id="simulation">
                 <div id="gravity">
                     <h3>Simulations</h2>
-
-                    <p>The gravity on Jupiter is 24.8 m/s, click the Run Simulation button to see a 
-                        simulation of an object falling on Jupiter!</p>
-                    <div id="gravity-sim">
-                        <canvas id="canvas-gravity"></canvas>
-                        <br>
-                        <div id="gravity-button">
-                            <a onclick=gravitySimulation(24.8)>Run Simulation!</a>
+                        
+                        <p>The gravity on Jupiter is 24.8 m/s, click the Run Simulation button to see a 
+                            simulation of an object falling on Jupiter!</p>
+                            <div id="gravity-sim">
+                                <canvas id="canvas-gravity"></canvas>
+                                <br>
+                                <div id="gravity-button">
+                                    <a onclick=gravitySimulation(24.8)>Run Simulation!</a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div id="footnotes">
+                        <h3>Footnotes:</h3>
+                        <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div id="footnotes">
-                <h3>Footnotes:</h3>
-                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
-                    </p>
-            </div>
-        </div>
 
 
         <script src="code.js"></script>

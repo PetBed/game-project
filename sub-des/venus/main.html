@@ -5,22 +5,44 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="nav-bar">
-            <a href="../../" id="back-button">&laquo; Back</a>
-            <a href="#intro">Overview</a>
-            <a href="#description">Description</a>
-            <a href="#fun-facts">Fun Facts</a>
-            <a href="#simulation">Simulation(s)</a>
-            <a href="#footnotes">Footnotes</a>
-        </div>
+        <video autoplay muted loop id="background-video">
+            <source src="../../images/venus.mp4" type="video/mp4">
+        </video>
 
-        <div id="main-div">
-            <h1>Venus: The Morning and Evening Star</h1>
+        <div id="main-container">
+            <div id="nav-bar">
+                <a href="../../" id="back-button">&laquo; Back</a>
+                <a href="#intro">Overview</a>
+                <a href="#description">Description</a>
+                <a href="#fun-facts">Fun Facts</a>
+                <a href="#simulation">Simulation(s)</a>
+                <a href="#footnotes">Footnotes</a>
+            </div>
+            
+            <div id="side-bar">
+                <iframe src="https://www.youtube.com/embed/BvXa1n9fjow?start=5" 
+                title="Venus 101 | National Geographic" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <br>
+                <iframe src="https://www.youtube.com/embed/X57ebvnkwxQ" 
+                title="The Mysterious Planet" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Venus" target="_blank">Wiki</a> Page About Venus</li>
+                    <li><a href="https://nineplanets.org/venus" target="_blank">More Facts About Venus</a></li>
+                    <li><a href="https://www.nasa.gov/venus" target="_blank">NASA Page About Venus</a></li>
+                </ul>
+            </div>
 
-            <div id="intro">
-                <h3>Overview</h3>
-                <p><strong>Venus</strong> is the second planet from the Sun and is Earth's closest planetary neighbour.
-                    Venus is known as the "Morning and Evening Star" because it is one of the brightest objects in the sky
+            <div id="main-div">
+                <h1>Venus: The Morning and Evening Star</h1>
+                
+                <div id="intro">
+                    <h3>Overview</h3>
+                    <p><strong>Venus</strong> is the second planet from the Sun and is Earth's closest planetary neighbour.
+                        Venus is known as the "Morning and Evening Star" because it is one of the brightest objects in the sky
                     when viewed from Earth. It is always found near the sun and it rises and sets each day.<br>
                     Venus' surface is often described as a "hellscape" due to thousands of volcanos and crushing air pressure 
                     on its surface.
@@ -57,12 +79,12 @@
                     with the average age of surface dating back to 150 million years ago mixed with some older surfaces.
                     Venus is a landscape of valleys and high mountains dotted with thousands of volcanoes. <br><br>
                 </p>
-                    <iframe src='https://solarsystem.nasa.gov/gltf_embed/2342' width='60%' height='450px' frameborder='0'></iframe>
-                    <div>
-                        <p>
-                            A 3D model of the surface of Venus. <br> Credit: NASA Visualization Technology Applications and Development (VTAD)
-                        </p>
-                    </div>
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2342' width='60%' height='450px' frameborder='0'></iframe>
+                <div>
+                    <p>
+                        A 3D model of the surface of Venus. <br> Credit: NASA Visualization Technology Applications and Development (VTAD)
+                    </p>
+                </div>
                 <p>
                     <strong>Temperatures:</strong> <br>
                     Venus is the hottest planet in the solar system - even though Mercury is closer to the sun.
@@ -91,29 +113,30 @@
             <div id="simulation">
                 <div id="gravity">
                     <h3>Simulations</h2>
-
-                    <p>The gravity on Venus is 8.87m/s, click the Run Simulation button to see a 
-                        simulation of an object falling on Venus!</p>
-                    <div id="gravity-sim">
-                        <canvas id="canvas-gravity"></canvas>
-                        <br>
-                        <div id="gravity-button">
-                            <a onclick=gravitySimulation(8.87)>Run Simulation!</a>
+                        
+                        <p>The gravity on Venus is 8.87m/s, click the Run Simulation button to see a 
+                            simulation of an object falling on Venus!</p>
+                            <div id="gravity-sim">
+                                <canvas id="canvas-gravity"></canvas>
+                                <br>
+                                <div id="gravity-button">
+                                    <a onclick=gravitySimulation(8.87)>Run Simulation!</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="footnotes">
-                <h3>Footnotes:</h3>
-                    <p><a href="#description">*</a>A microorganism that lives in conditions of extreme temperature, acidity, alkalinity, or chemical concentration.
-                    </p>
-                    <p><a href="#description">**</a>The greenhouse effect is a process that occurs when gases in the atmosphere trap 
-                    the sun's heat. <a href="https://en.wikipedia.org/wiki/Greenhouse_effect" target="_blank">Click here for 
-                        Wikipedia page about the greenhouse effect.</a></p>
-            </div>
-        </div>
-
-
-        <script src="code.js"></script>
-    </body>
-</html>
+                    <div id="footnotes">
+                        <h3>Footnotes:</h3>
+                        <p><a href="#description">*</a>A microorganism that lives in conditions of extreme temperature, acidity, alkalinity, or chemical concentration.
+                        </p>
+                        <p><a href="#description">**</a>The greenhouse effect is a process that occurs when gases in the atmosphere trap 
+                            the sun's heat. <a href="https://en.wikipedia.org/wiki/Greenhouse_effect" target="_blank">Click here for 
+                                Wikipedia page about the greenhouse effect.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+                        <script src="code.js"></script>
+                    </body>
+                    </html>

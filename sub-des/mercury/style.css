@@ -5,7 +5,10 @@ body{
   margin: 0px;
 }
 #main-container{
-  margin: 5px 0px 0px 20px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-65%, 0%);
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0px 10px;
   overflow: wrap;
@@ -15,18 +18,22 @@ body{
   position: fixed;
   left: -300px;
   top: -150px;
-  min-width: 100%;
+  min-width: 120%;
   min-height: 100%;
   z-index: -100;
 }
 #side-bar{
   position: sticky;
-  transform: translate(110%, 15%);
-  height: 100vh;
-  top: -5px;
+  transform: translate(110%, 5%);
+  height: 95vh;
+  top: -4%;
   /* width: 24vw; */
   float: right;
   background-color: rgba(255, 174, 97, 0.5);
+  padding: 10px 10px;
+}
+#side-bar li a{
+  
 }
 #canvas-gravity{
     border: 2px solid black;

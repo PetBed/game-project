@@ -5,18 +5,35 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="nav-bar">
-            <a href="../../" id="back-button">&laquo; Back</a>
-            <a href="#intro">Overview</a>
-            <a href="#description">Description</a>
-            <a href="#fun-facts">Fun Facts</a>
-            <a href="#simulation">Simulation(s)</a>
-            <a href="#footnotes">Footnotes</a>
-        </div>
+        <video autoplay muted loop id="background-video">
+            <source src="../../images/saturn.mp4" type="video/mp4">
+        </video>
 
-        <div id="main-div">
+        <div id="main-container">
+            <div id="nav-bar">
+                <a href="../../" id="back-button">&laquo; Back</a>
+                <a href="#intro">Overview</a>
+                <a href="#description">Description</a>
+                <a href="#fun-facts">Fun Facts</a>
+                <a href="#simulation">Simulation(s)</a>
+                <a href="#footnotes">Footnotes</a>
+            </div>
+            
+            <div id="side-bar">
+                <iframe src="https://www.youtube.com/embed/epZdZaEQhS0" 
+                title="Saturn 101 | National Geographic" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Wiki</a> Page About Saturn</li>
+                    <li><a href="https://nineplanets.org/saturn" target="_blank">More Facts About Saturn</a></li>
+                    <li><a href="https://www.nasa.gov/saturn" target="_blank">News About Saturn from NASA</a></li>
+                </ul>
+            </div>
+
+            <div id="main-div">
             <h1>Saturn: The Ringed Planet</h1>
-
+            
             <div id="intro">
                 <h3>Overview</h3>
                 <p><strong>Saturn</strong> is the sixth planet from the Sun and is the second largest planet our solar system.
@@ -79,32 +96,33 @@
                     <li>Saturn is named after the Roman god of farming, Saturn.</li>
                 </ul>
             </div>
-
+            
             <div id="simulation">
                 <div id="gravity">
                     <h3>Simulations</h2>
-
-                    <p>The gravity on Saturn is 10.4m/s, click the Run Simulation button to see a 
-                        simulation of an object falling on Saturn!</p>
-                    <div id="gravity-sim">
-                        <canvas id="canvas-gravity"></canvas>
-                        <br>
-                        <div id="gravity-button">
-                            <a onclick=gravitySimulation(10.44)>Run Simulation!</a>
+                        
+                        <p>The gravity on Saturn is 10.4m/s, click the Run Simulation button to see a 
+                            simulation of an object falling on Saturn!</p>
+                            <div id="gravity-sim">
+                                <canvas id="canvas-gravity"></canvas>
+                                <br>
+                                <div id="gravity-button">
+                                    <a onclick=gravitySimulation(10.44)>Run Simulation!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footnotes">
+                        <h3>Footnotes:</h3>
+                        <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
+                        </p>
+                        <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
+                            Rings D, E, F, and G are fainter and more recently discovered.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="footnotes">
-                <h3>Footnotes:</h3>
-                    <p><a href="#intro">*</a>One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth.
-                    </p>
-                    <p><a href="#description">**</a>The rings are name alphabetically in the order they were discovered.  The main rings are A, B, and C. 
-                        Rings D, E, F, and G are fainter and more recently discovered.</p>
-            </div>
-        </div>
-
-
-        <script src="code.js"></script>
-    </body>
-</html>
+                    
+                    
+                    <script src="code.js"></script>
+                </body>
+                </html>
