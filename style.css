@@ -109,7 +109,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #dd8615;
     padding-top: 0px;
   }
   
@@ -118,7 +118,8 @@ body{
     width: 100%;
     text-decoration: none;
     font-size: 30px;
-    color: #818181;
+    /* color: #818181; */
+    color: #000000;
     display: inline-block;
     transition: 0.3s;
 }
@@ -128,10 +129,10 @@ body{
     padding: 8px 40px 4px 32px;
     text-decoration: none;
     font-size: 30px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s;
-    border-bottom: 1px solid #818181;
+    border-bottom: 1px solid #000000;
 }
   
 #nav a:hover {
@@ -160,13 +161,13 @@ body{
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    color: #f1f1f1;
+    color: #f1f1f160;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #70f5ff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
