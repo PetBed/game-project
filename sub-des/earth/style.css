@@ -28,7 +28,6 @@ body{
   height: 95vh;
   top: -4%;
   /* width: 24vw; */
-  float: right;
   background-color: rgba(255, 174, 97, 0.5);
   padding: 10px 10px;
 }
